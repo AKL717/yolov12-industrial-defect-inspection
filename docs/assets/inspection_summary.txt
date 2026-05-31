@@ -1,0 +1,15 @@
+Industrial Vision Defect System - Inspection Summary
+====================================================
+total_images: 30
+ok_images: 1
+ng_images: 29
+detected_defects: 65
+ground_truth_boxes: 64
+true_positive: 55
+false_positive: 10
+false_negative: 9
+precision: 0.8462
+recall: 0.8594
+f1_score: 0.8527
+mean_matched_iou: 0.7379
+avg_processing_ms: 155.5392

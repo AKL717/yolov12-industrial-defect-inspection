@@ -1,0 +1,39 @@
+%YAML:1.0
+---
+preprocess:
+  blur_ksize: 5
+  threshold_method: "otsu"     # otsu, binary, adaptive
+  binary_threshold: 80.0
+  invert_binary: 1
+  morph_kernel_size: 5
+  open_iterations: 1
+  close_iterations: 2
+
+detector:
+  min_area: 80.0
+  max_area: 50000.0
+  min_aspect_ratio: 0.05
+  max_aspect_ratio: 20.0
+  min_circularity: 0.0
+  roi_x: -1
+  roi_y: -1
+  roi_width: 0
+  roi_height: 0
+
+runtime:
+  input_path: ""
+  output_dir: "results"
+  label_dir: ""
+  backend: "traditional"       # traditional, onnx, hybrid
+  model_path: ""
+  use_camera: 0
+  camera_id: 0
+  show_window: 1
+  save_results: 1
+  demo_mode: 1
+  frame_delay_ms: 1
+  evaluate: 1
+  iou_threshold: 0.3
+  input_size: 640
+  confidence_threshold: 0.25
+  nms_threshold: 0.45
